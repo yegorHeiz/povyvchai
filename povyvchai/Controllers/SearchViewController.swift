@@ -17,22 +17,30 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if let searchText = searchTextField.text, searchText.count > 1 {
-            view.endEditing(true)
-            return true
-        } else {
-            return false
-        }
+        view.endEditing(true)
+        return true
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        performSegue(withIdentifier: Constants.searchResultSegue, sender: nil)
+        performSegueToSearchResult()
     }
     
+    func performSegueToSearchResult(){
+        if let searchText = searchTextField.text, searchText.count > 1 {
+            performSegue(withIdentifier: Constants.searchResultSegue, sender: nil)
+        }
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let searchResult = segue.destination as! SearchResultTableViewController
         searchResult.searchText = searchTextField.text!
     }
     
+    @IBAction func searchPressed(_ sender: UIButton) {
+        if searchTextField.isEditing {
+            view.endEditing(true)
+        } else {
+            performSegueToSearchResult()
+        }
+    }
 }

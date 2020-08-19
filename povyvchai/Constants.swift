@@ -7,5 +7,6 @@
 //
 
 struct Constants {
-    static let searchResultSegue = "SearchResult"
+    static let searchResultSegue = "SearchResultSegue"
+    static let poemSegue = "PoemSegue"
 }

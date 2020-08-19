@@ -6,7 +6,8 @@
 //  Copyright © 2020 Yegor Heiz. All rights reserved.
 //
 
-struct SearchResult {
+struct Poem {
     let author: String
     let poem: String
+    let text: String
 }

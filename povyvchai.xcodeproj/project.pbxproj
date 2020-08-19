@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C045744624EDA6DC00BFA918 /* PoemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C045744524EDA6DC00BFA918 /* PoemViewController.swift */; };
 		C047264124EC60550005CCFA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C047264024EC60550005CCFA /* SearchViewController.swift */; };
 		C047264324EC67E60005CCFA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C047264224EC67E60005CCFA /* Constants.swift */; };
 		C047264724EC68BC0005CCFA /* SearchResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C047264624EC68BC0005CCFA /* SearchResultTableViewController.swift */; };
 		C047264924EC6B800005CCFA /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C047264824EC6B800005CCFA /* SearchResult.swift */; };
 		C0E617A224CF349A00E11848 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E617A124CF349A00E11848 /* AppDelegate.swift */; };
 		C0E617A424CF349A00E11848 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E617A324CF349A00E11848 /* SceneDelegate.swift */; };
-		C0E617A624CF349A00E11848 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E617A524CF349A00E11848 /* ViewController.swift */; };
 		C0E617A924CF349A00E11848 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E617A724CF349A00E11848 /* Main.storyboard */; };
 		C0E617AB24CF349B00E11848 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0E617AA24CF349B00E11848 /* Assets.xcassets */; };
 		C0E617AE24CF349B00E11848 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E617AC24CF349B00E11848 /* LaunchScreen.storyboard */; };
-		C0E617B624CF34EF00E11848 /* Poem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E617B524CF34EF00E11848 /* Poem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C045744524EDA6DC00BFA918 /* PoemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoemViewController.swift; sourceTree = "<group>"; };
 		C047264024EC60550005CCFA /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C047264224EC67E60005CCFA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C047264624EC68BC0005CCFA /* SearchResultTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewController.swift; sourceTree = "<group>"; };
@@ -28,12 +28,10 @@
 		C0E6179E24CF349A00E11848 /* povyvchai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = povyvchai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E617A124CF349A00E11848 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0E617A324CF349A00E11848 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C0E617A524CF349A00E11848 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C0E617A824CF349A00E11848 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0E617AA24CF349B00E11848 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0E617AD24CF349B00E11848 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0E617AF24CF349B00E11848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0E617B524CF34EF00E11848 /* Poem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +48,6 @@
 		C047263D24EC5D150005CCFA /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C0E617B524CF34EF00E11848 /* Poem.swift */,
 				C047264824EC6B800005CCFA /* SearchResult.swift */,
 			);
 			path = Models;
@@ -59,9 +56,9 @@
 		C047263E24EC5D1D0005CCFA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C0E617A524CF349A00E11848 /* ViewController.swift */,
 				C047264024EC60550005CCFA /* SearchViewController.swift */,
 				C047264624EC68BC0005CCFA /* SearchResultTableViewController.swift */,
+				C045744524EDA6DC00BFA918 /* PoemViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -178,10 +175,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C047264124EC60550005CCFA /* SearchViewController.swift in Sources */,
-				C0E617A624CF349A00E11848 /* ViewController.swift in Sources */,
 				C047264924EC6B800005CCFA /* SearchResult.swift in Sources */,
 				C0E617A224CF349A00E11848 /* AppDelegate.swift in Sources */,
-				C0E617B624CF34EF00E11848 /* Poem.swift in Sources */,
+				C045744624EDA6DC00BFA918 /* PoemViewController.swift in Sources */,
 				C0E617A424CF349A00E11848 /* SceneDelegate.swift in Sources */,
 				C047264324EC67E60005CCFA /* Constants.swift in Sources */,
 				C047264724EC68BC0005CCFA /* SearchResultTableViewController.swift in Sources */,

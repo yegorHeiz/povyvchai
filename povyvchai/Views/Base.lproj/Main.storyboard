@@ -7,90 +7,69 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Poem View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="povyvchai" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PoemViewController" customModule="povyvchai" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ты меня не любишь, не жалеешь" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRb-HK-w89">
-                                <rect key="frame" x="75" y="98" width="264" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Сергей Есенин" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0g-xE-t7S">
-                                <rect key="frame" x="147" y="138" width="121" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yY4-Sr-9YQ">
-                                <rect key="frame" x="55" y="178" width="305" height="604"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Ты меня не любишь, не жалеешь,
-            Разве я немного не красив?
-            Не смотря в лицо, от страсти млеешь,
-            Мне на плечи руки опустив.
-
-            Молодая, с чувственным оскалом,
-            Я с тобой не нежен и не груб.
-            Расскажи мне, скольких ты ласкала?
-            Сколько рук ты помнишь? Сколько губ?
-
-            Знаю я — они прошли, как тени,
-            Не коснувшись твоего огня,
-            Многим ты садилась на колени,
-            А теперь сидишь вот у меня.
-
-            Пусть твои полузакрыты очи
-            И ты думаешь о ком-нибудь другом,
-            Я ведь сам люблю тебя не очень,
-            Утопая в дальнем дорогом.
-
-            Этот пыл не называй судьбою,
-            Легкодумна вспыльчивая связь,—
-            Как случайно встретился с тобою,
-            Улыбнусь, спокойно разойдясь.
-
-            Да и ты пойдешь своей дорогой
-            Распылять безрадостные дни,
-            Только нецелованных не трогай,
-            Только негоревших не мани.
-
-            И когда с другим по переулку
-            Ты пойдешь, болтая про любовь,
-            Может быть, я выйду на прогулку,
-            И с тобою встретимся мы вновь.
-
-            Отвернув к другому ближе плечи
-            И немного наклонившись вниз,
-            Ты мне скажешь тихо: «Добрый вечер…»
-            Я отвечу: «Добрый вечер, miss».
-
-            И ничто души не потревожит,
-            И ничто ее не бросит в дрожь,—
-            Кто любил, уж тот любить не может,
-            Кто сгорел, того не подожжешь.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="9b7-TL-Ft9">
+                                <rect key="frame" x="20" y="108" width="374" height="680"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ты меня не любишь, не жалеешь" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRb-HK-w89">
+                                        <rect key="frame" x="20" y="0.0" width="334" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сергей Есенин" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0g-xE-t7S">
+                                        <rect key="frame" x="20" y="39.5" width="334" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Some text" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yY4-Sr-9YQ">
+                                        <rect key="frame" x="0.0" y="79" width="374" height="601"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="LRb-HK-w89" firstAttribute="top" secondItem="9b7-TL-Ft9" secondAttribute="top" id="OYS-Yv-DZ0"/>
+                                    <constraint firstAttribute="trailing" secondItem="yY4-Sr-9YQ" secondAttribute="trailing" id="a2p-pF-4qI"/>
+                                    <constraint firstItem="u0g-xE-t7S" firstAttribute="leading" secondItem="9b7-TL-Ft9" secondAttribute="leading" constant="20" id="aWL-J8-aok"/>
+                                    <constraint firstItem="yY4-Sr-9YQ" firstAttribute="leading" secondItem="9b7-TL-Ft9" secondAttribute="leading" id="e8f-IE-zw3"/>
+                                    <constraint firstItem="LRb-HK-w89" firstAttribute="leading" secondItem="9b7-TL-Ft9" secondAttribute="leading" constant="20" id="gSl-SD-8z1"/>
+                                    <constraint firstAttribute="trailing" secondItem="u0g-xE-t7S" secondAttribute="trailing" constant="20" id="hZF-Gb-X9T"/>
+                                    <constraint firstAttribute="trailing" secondItem="LRb-HK-w89" secondAttribute="trailing" constant="20" id="jQF-5i-IKu"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9b7-TL-Ft9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4zG-JE-VCv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9b7-TL-Ft9" secondAttribute="trailing" constant="20" id="LH2-5C-0Ls"/>
+                            <constraint firstItem="9b7-TL-Ft9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="LU8-uI-6fL"/>
+                            <constraint firstItem="9b7-TL-Ft9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="S0c-UM-O3J"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="veZ-1M-kJF"/>
+                    <connections>
+                        <outlet property="poemAuthor" destination="u0g-xE-t7S" id="EqF-il-TYr"/>
+                        <outlet property="poemText" destination="yY4-Sr-9YQ" id="AZV-Wy-fGQ"/>
+                        <outlet property="poemTitle" destination="LRb-HK-w89" id="0Gg-v8-Fdu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1351" y="130"/>
         </scene>
-        <!--Search Result-->
+        <!--Search Results-->
         <scene sceneID="ClY-85-XFR">
             <objects>
                 <tableViewController id="DPB-dx-0gv" customClass="SearchResultTableViewController" customModule="povyvchai" customModuleProvider="target" sceneMemberID="viewController">
@@ -129,7 +108,10 @@
                             <outlet property="delegate" destination="DPB-dx-0gv" id="IUf-bP-cPK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Search Result" id="ySj-gZ-Lxj"/>
+                    <navigationItem key="navigationItem" title="Search Results" id="ySj-gZ-Lxj"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="PoemSegue" id="qgw-pN-hHB"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iY8-P3-cGG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -168,16 +150,28 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search the poem here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CYa-Nf-PZ0">
-                                        <rect key="frame" x="20" y="46" width="334" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="search"/>
-                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="niC-sN-DwK">
+                                        <rect key="frame" x="10" y="46" width="354" height="34"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search the poem here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CYa-Nf-PZ0">
+                                                <rect key="frame" x="0.0" y="0.0" width="286" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4q-Ze-mJQ">
+                                                <rect key="frame" x="306" y="0.0" width="48" height="34"/>
+                                                <state key="normal" title="Search"/>
+                                                <connections>
+                                                    <action selector="searchPressed:" destination="1TN-IX-LhH" eventType="touchUpInside" id="fGq-tz-Fe0"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="E27-dH-tSB" firstAttribute="centerX" secondItem="nfh-8n-SP3" secondAttribute="centerX" id="9dl-rj-sMn"/>
-                                    <constraint firstItem="CYa-Nf-PZ0" firstAttribute="leading" secondItem="nfh-8n-SP3" secondAttribute="leading" constant="20" id="IT9-ke-eLR"/>
-                                    <constraint firstAttribute="trailing" secondItem="CYa-Nf-PZ0" secondAttribute="trailing" constant="20" id="vzT-GM-uqh"/>
+                                    <constraint firstAttribute="trailing" secondItem="niC-sN-DwK" secondAttribute="trailing" constant="10" id="avY-TH-5cC"/>
+                                    <constraint firstItem="niC-sN-DwK" firstAttribute="leading" secondItem="nfh-8n-SP3" secondAttribute="leading" constant="10" id="lel-FY-Wrd"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -193,7 +187,7 @@
                     <navigationItem key="navigationItem" id="0Zj-gx-ax9"/>
                     <connections>
                         <outlet property="searchTextField" destination="CYa-Nf-PZ0" id="30d-xP-EJU"/>
-                        <segue destination="DPB-dx-0gv" kind="show" identifier="SearchResult" id="vSd-K3-sDB"/>
+                        <segue destination="DPB-dx-0gv" kind="show" identifier="SearchResultSegue" id="vSd-K3-sDB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pmc-hc-IHc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

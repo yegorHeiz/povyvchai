@@ -11,17 +11,16 @@ import UIKit
 class SearchResultTableViewController: UITableViewController {
     
     var searchText: String!
-    var poems: [SearchResult] = [
-        SearchResult(author: "Сергей Есенин", poem: "Ты меня не любишь, не жалеешь"),
-        SearchResult(author: "Сергей Есенин", poem: "Письмо к женщине")
+    var poems: [Poem] = [
+        Poem(author: "Сергей Есенин", poem: "Ты меня не любишь, не жалеешь", text: "Random Text 1"),
+        Poem(author: "Сергей Есенин", poem: "Письмо к женщине", text: "Random Text 2")
     ]
+    var selectedPoem: Poem?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // TODO: Retrieve data from API based on searchText
     }
-    
-    // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -38,5 +37,15 @@ class SearchResultTableViewController: UITableViewController {
         cell.detailTextLabel?.text = poems[indexPath.row].author
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedPoem = poems[indexPath.row]
+        performSegue(withIdentifier: Constants.poemSegue, sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let poemViewController = segue.destination as! PoemViewController
+        poemViewController.poem = selectedPoem!
     }
 }
